@@ -1,0 +1,4 @@
+dynamicslideshow
+================
+
+jQuery Dynamic Slideshow
