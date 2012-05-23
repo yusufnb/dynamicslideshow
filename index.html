@@ -1,5 +1,32 @@
+<!doctype html>
 <html>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dynamicslideshow by yusufnb</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Dynamicslideshow</h1>
+        <p>jQuery Dynamic Slideshow</p>
+        <p class="view"><a href="https://github.com/yusufnb/dynamicslideshow">View the Project on GitHub <small>yusufnb/dynamicslideshow</small></a></p>
+        <ul>
+          <li><a href="https://github.com/yusufnb/dynamicslideshow/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/yusufnb/dynamicslideshow/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/yusufnb/dynamicslideshow">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>jQuery Dynamic Slideshow Plugin</h1>
+
 <style>
 	#slider {position: relative; width: 450px; height: 250px;}
 </style>
@@ -19,5 +46,57 @@
 	<a href="http://placehold.it/450x250/F2A5AA&text=4"></a>
 	<a href="http://placehold.it/450x250/8FF2F2&text=5"></a>
 </div>
-</body>
+
+<h2>Why one more slideshow?</h2>
+
+<p>I needed a way to slide large number of images without bloating my page size. This plugin creates slideshow out of anchor tags. Thus the images are not loaded during page load but one at a time. Moreover only 2 images at a time are kept in the DOM, keeping the page light. The anchor tags allows easy editing the page.</p>
+
+<h2>Usage</h2>
+
+<div class="highlight">
+<pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#slider'</span><span class="p">).</span><span class="nx">dynamicSlideshow</span><span class="p">();</span>
+</pre>
+</div>
+
+
+<h2>Options</h2>
+
+<ul>
+<li>duration         - the interval of slideshow</li>
+</ul><h2>Example:</h2>
+
+<pre><code>&lt;style&gt;
+    #slider {position: relative; width: 450px; height: 250px;}
+&lt;/style&gt;
+
+&lt;script src="http://code.jquery.com/jquery-1.5.2.min.js"&gt;&lt;/script&gt; 
+&lt;script src="jquery.dynamicSlideshow.js"&gt;&lt;/script&gt; 
+&lt;script&gt;
+    $(function(){
+        $('#slider').dynamicSlideshow();
+    });
+&lt;/script&gt;
+
+&lt;div id="slider"&gt;
+    &lt;a href="http://placehold.it/450x250/263973&amp;text=1"&gt;&lt;/a&gt;
+    &lt;a href="http://placehold.it/450x250/4A4973&amp;text=2"&gt;&lt;/a&gt;
+    &lt;a href="http://placehold.it/450x250/F2C12E&amp;text=3"&gt;&lt;/a&gt;
+    &lt;a href="http://placehold.it/450x250/F2A5AA&amp;text=4"&gt;&lt;/a&gt;
+    &lt;a href="http://placehold.it/450x250/8FF2F2&amp;text=5"&gt;&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2>License</h2>
+
+<p>This plugin is dual-licensed under the GNU General Public License and the MIT License and
+is copyright 2011 Yusuf Najmuddin <a href="mailto:yusufnb@gmail.com">yusufnb@gmail.com</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/yusufnb">yusufnb</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
 </html>
